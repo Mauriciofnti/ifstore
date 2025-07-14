@@ -1,0 +1,53 @@
+@import './base.css';
+
+:root {
+  --page1: #fff;
+  --page2: #eeecec;
+  --page2-hover: #041d0c;
+  --border-src: #ccc;
+  --text: #000;
+  --textwhite: #fff;
+  --text-hover: #03291399;
+}
+
+body.dark {
+  --page1: #272525;
+  --page2: #363636;
+  --page2-hover: #454545;
+  --border-src: #585858;
+  --text: #fff;
+  --textwhite: #000;
+  --text-hover: #a6ffcb99;
+}
+#app {
+  font-weight: normal;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--page1);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+  max-width: 1280px;
+  padding: 60px 1rem;
+  margin: 0 auto;
+  background-color: var(--page1);
+  transition: background-color 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+
+@media (hover: hover) {
+  a:hover {
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+  }
+}
