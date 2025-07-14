@@ -21,26 +21,6 @@ const router = createRouter({
       component: () => import('../views/CartView.vue'),
     },
     {
-      path: '/termos',
-      name: 'termos',
-      component: () => import('../views/TermosView.vue'),
-    },
-    {
-      path: '/equipe',
-      name: 'equipe',
-      component: () => import('../views/EquipeView.vue'),
-    },
-    {
-      path: '/envio',
-      name: 'envio',
-      component: () => import('../views/EnvioView.vue'),
-    },
-    {
-      path: '/devolucoes',
-      name: 'devolucoes',
-      component: () => import('../views/DevolucoesView.vue'),
-    },
-    {
       path: '/pcbuild',
       name: 'pcbuild',
       component: pc_build
