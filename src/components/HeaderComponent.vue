@@ -170,7 +170,7 @@ header nav .hamburger {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--page2);
     position: absolute;
     top: 100%;
     left: 0;

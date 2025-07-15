@@ -1,10 +1,10 @@
 <template>
-    <section>
+    <section id="pix">
         <img src="../../public/images/pix.jpeg" alt="">
     </section>
 </template>
-<style>
-section {
+<style scoped>
+#pix {
     display: flex;
     justify-content: center;
 
