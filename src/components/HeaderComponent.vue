@@ -33,13 +33,13 @@ function toggleMenu() {
           <RouterLink to="/cart"><span class="mdi mdi-cart"></span></RouterLink>
         </li>
         <li>
-            <button
+            <span
               id="darkModeButton"
               @click="toggleDarkMode"
               aria-label="Alternar modo escuro"
             >
             <i :class="isDarkMode ? 'fa-solid fa-moon' : 'fa-solid fa-sun'"></i>
-            </button>
+        </span>
         </li>
 
             <button class="hamburger" @click="toggleMenu">

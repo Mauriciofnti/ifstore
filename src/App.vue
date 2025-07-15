@@ -32,6 +32,5 @@ const { isDarkMode } = useDarkMode()
 
 /* Estilos para o tema escuro */
 :where(.dark) {
-  color: #f8c6c6;
 }
 </style>
