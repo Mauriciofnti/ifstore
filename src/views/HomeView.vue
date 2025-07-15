@@ -326,6 +326,9 @@ const { currentIndex: promoIndex, track: promoTrack, prevBtn: promoPrevBtn, next
     font-size: 0.9rem;
   }
 
+  #promocoes .carousel-image {
+    max-width: 100%;
+  }
   .carousel-btn {
     font-size: 14px;
     padding: 8px;
