@@ -43,11 +43,9 @@ a {
 }
 
 @media (hover: hover) {
-  a:hover {
-  }
+
 }
 
 @media (min-width: 1024px) {
-  main {
-  }
+
 }

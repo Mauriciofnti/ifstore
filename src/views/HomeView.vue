@@ -1,4 +1,3 @@
-```vue
 <script setup>
 import { ref, computed } from 'vue'
 import { RouterLink } from 'vue-router'
@@ -14,7 +13,7 @@ const bannerImages = ref([
   { src: '/images/banner3.jpg', alt: 'Banner 3', link: '/products/Processadores' },
 ])
 
-const { currentIndex: bannerIndex, track: bannerTrack, prevBtn: bannerPrevBtn, nextBtn: bannerNextBtn, productImages: bannerProductImages, goToSlide: bannerGoToSlide, updateCarousel: bannerUpdateCarousel } = useCarousel(bannerImages)
+const { currentIndex: bannerIndex, track: bannerTrack, prevBtn: bannerPrevBtn, nextBtn: bannerNextBtn, productImages: bannerProductImages, goToSlide: bannerGoToSlide } = useCarousel(bannerImages)
 
 // Carrossel de promoções
 const promoImages = computed(() => {
@@ -28,7 +27,7 @@ const promoImages = computed(() => {
   }))
 })
 
-const { currentIndex: promoIndex, track: promoTrack, prevBtn: promoPrevBtn, nextBtn: promoNextBtn, productImages: promoProductImages, goToSlide: promoGoToSlide, updateCarousel: promoUpdateCarousel } = useCarousel(promoImages)
+const { currentIndex: promoIndex, track: promoTrack, prevBtn: promoPrevBtn, nextBtn: promoNextBtn, productImages: promoProductImages, goToSlide: promoGoToSlide } = useCarousel(promoImages)
 </script>
 
 <template>
