@@ -151,7 +151,7 @@ const { currentIndex: promoIndex, track: promoTrack, prevBtn: promoPrevBtn, next
   position: relative;
   overflow: hidden;
   background-color: var(--page2);
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 0 10px 1px var(--border-src) inset;
 }
 
@@ -278,7 +278,7 @@ const { currentIndex: promoIndex, track: promoTrack, prevBtn: promoPrevBtn, next
   padding: 2%;
   margin: 5px;
   box-shadow: 0 0 10px 1px var(--border-src) inset;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: var(--page2);
   transition: transform 1s ease;
   color: var(--text);

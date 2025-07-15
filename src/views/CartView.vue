@@ -103,6 +103,7 @@ const cartStore = useCartStore()
     & .cart-item-quantity {
       display: flex;
       align-items: center;
+      justify-content: space-evenly;
     }
 
     & .cart-item-subtotal {
@@ -163,7 +164,10 @@ const cartStore = useCartStore()
 
     & .summary {
       border: 1px solid rgb(128, 128, 128);
+      border-radius: 10px;
       padding: 1vw;
+      margin: 10px;
+
 
       & h2 {
         font-size: 1.2rem;
@@ -185,6 +189,12 @@ const cartStore = useCartStore()
         margin-top: 20px;
       }
     }
+  }
+}
+
+@media (max-width: 700px) {
+  .cart table tbody a, .cart-summary{
+    flex-direction: column;
   }
 }
 </style>

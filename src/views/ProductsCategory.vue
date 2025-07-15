@@ -94,10 +94,10 @@ h1 {
 }
 
 h2 {
-    background-color: var(--page2);
+    background-color: var(--page1);
     text-align: center;
     font-size: 26px;
-    box-shadow: 1px 2px 2px  #461111;
+    box-shadow: 1px 2px 2px  var(--border-src);
 }
 
 
