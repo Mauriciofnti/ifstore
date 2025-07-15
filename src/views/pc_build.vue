@@ -447,7 +447,7 @@ h2 {
 
 .progress-item.active {
   background-color: var(--page2-hover);
-  color: var(--page1);
+  color: #fff;
 }
 
 .products-container {

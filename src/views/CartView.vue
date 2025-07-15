@@ -69,6 +69,8 @@ const cartStore = useCartStore()
   justify-content: center;
   padding: 5vh 8vw;
   border-bottom: 2px solid #27ae6099;
+  background-color: var(--page2);
+  border-radius: 5px;
 
   & h2 {
     font-size: 2rem;
@@ -108,7 +110,7 @@ const cartStore = useCartStore()
       font-weight: 700;
     }
 
-    & .cart-item {
+    & .cart-item a {
       display: flex;
       align-items: center;
       gap: 20px;
