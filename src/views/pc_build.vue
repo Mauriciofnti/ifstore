@@ -594,6 +594,9 @@ h2 {
     max-width: 100%;
     margin-top: 1rem;
   }
+  .product-image{
+    max-width: fit-content;
+  }
 }
 
 @media (max-width: 768px) {
