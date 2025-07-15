@@ -146,7 +146,7 @@ const { currentIndex: promoIndex, track: promoTrack, prevBtn: promoPrevBtn, next
 
 #promocoes.promocoes-container {
   padding: 20px 70px;
-  max-width: 100%;
+  max-width: 70%;
   margin: 2rem auto;
   position: relative;
   overflow: hidden;
@@ -279,19 +279,21 @@ const { currentIndex: promoIndex, track: promoTrack, prevBtn: promoPrevBtn, next
   margin: 5px;
   box-shadow: 0 0 10px 1px var(--border-src) inset;
   border-radius: 10px;
-  background-color: var(--page2);
-  transition: transform 1s ease;
+  background: radial-gradient(circle, var(--page2) 10px, var(--text));
+  transition: all 1.5s ease;
   color: var(--text);
 
 }
 
 #home-page-produtos div a, #center-produtos div a {
   text-decoration: none;
-
+  & img {
+    transition: transform .5s ease;
+  }
 }
 
 #home-page-produtos div:hover, #center-produtos div:hover {
-  background-color: var(--page2-hover);
+  background: radial-gradient(circle, var(--text-hover) 10px, var(--page2-hover));
   & p {
     color: #fff;
   }
@@ -299,6 +301,11 @@ const { currentIndex: promoIndex, track: promoTrack, prevBtn: promoPrevBtn, next
 
 #home-page-produtos div a img:hover, #center-produtos div a img:hover {
   transform: scale(105%);  
+}
+
+
+#promocoes .carousel-image {
+  max-width: 50%;
 }
 
 @media (max-width: 768px) {

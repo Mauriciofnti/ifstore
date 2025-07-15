@@ -117,6 +117,9 @@ section {
     border-radius: 5px;
     padding: 10px;
     background-color: var(--page2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 img {
