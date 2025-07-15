@@ -42,6 +42,21 @@ a {
   transition: color 0.2s ease;
 }
 
+button {
+  border: none;
+  background-color: var(--page1);
+  color: var(--text1);
+  border-radius: 5px;
+  padding: 2% 4%;
+  box-shadow: 1px 1px 1px var(--border-src);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--text-hover);
+  color: var(--textwhite);
+}
+
 @media (hover: hover) {
 
 }

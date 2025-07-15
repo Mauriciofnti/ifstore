@@ -54,14 +54,14 @@ const cartStore = useCartStore()
             ><span>Frete</span> <span> Grátis</span> <span>Total</span
             ><span>R$ {{ cartStore.cart.total.toFixed(2) }}</span>
           </div>
-          <button>Ir para pagamento</button>
+          <RouterLink to="/pay"> <button>Ir para pagamento</button></RouterLink>
         </div>
       </div>
     </section>
   </main>
 </template>
 
-<style>
+<style scoped>
 .cart {
   display: flex;
   flex-direction: column;

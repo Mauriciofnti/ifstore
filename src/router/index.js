@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import Products from '../views/ProductsCategory.vue'
 import ProductDetails from '../views/ProductDetails.vue'
 import pc_build from '../views/pc_build.vue'
+import PagamentoView from '@/views/PagamentoView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,6 +25,11 @@ const router = createRouter({
       path: '/pcbuild',
       name: 'pcbuild',
       component: pc_build
+    },
+    {
+      path: '/pay',
+      name: 'pay',
+      component: PagamentoView
     },
     {
       path: '/product/:id',
