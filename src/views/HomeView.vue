@@ -141,6 +141,7 @@ const { currentIndex: promoIndex, track: promoTrack, prevBtn: promoPrevBtn, next
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 #promocoes.promocoes-container {
@@ -200,8 +201,9 @@ const { currentIndex: promoIndex, track: promoTrack, prevBtn: promoPrevBtn, next
   display: block;
   transform: scale(100%);
   transition: transform 1s ease;
-  border-radius: 5px;
   margin-bottom: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px var(--border-src);
 }
 
 .promo-title {
@@ -247,7 +249,7 @@ const { currentIndex: promoIndex, track: promoTrack, prevBtn: promoPrevBtn, next
   display: inline-block;
   width: 10px;
   height: 10px;
-  background: var(--page2);
+  background: var(--text);
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;

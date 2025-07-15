@@ -18,16 +18,16 @@
       </div>
       <div>
         <p class="contact-text">Contato</p>
-        <p><span class="mdi mdi-phone" /> +55 47 99999-9999</p>
-        <p><span class="mdi mdi-clock" /> 8h às 23h - Seg a Sex</p>
-        <p><span class="mdi mdi-email" /> contato@ifbooks.com.br</p>
+        <p><span class="mdi mdi-account" /> Maurício Fantinelli</p>
+        <p><span class="mdi mdi-account" /> Guilherme Cardoso</p>
+        <p><span class="mdi mdi-account" /> Kelvin Kenner Lopes de Oliveira</p>
         <div class="payment-methods">
           <span class="mdi mdi-visa" />
         </div>
       </div>
     </section>
     <section class="lower-footer">
-      <p>&copy; Alguns direitos reservados. IFBooks. 2025</p>
+      <p>&copy; Alguns direitos reservados. IFstore. 2025</p>
     </section>
   </nav>
 </footer>

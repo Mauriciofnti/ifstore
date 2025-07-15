@@ -199,7 +199,7 @@ h1 {
 
 .price {
   font-size: 24px;
-  color: var(--page2-hover);
+  color: var(--text1);
   margin-bottom: 20px;
 }
 
