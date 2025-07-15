@@ -23,12 +23,14 @@ const cartStore = useCartStore()
         <tbody>
           <tr v-for="product in cartStore.cart.items" :key="product.id">
             <td class="cart-item">
-              <img :src="product.image[0]" alt="{{product.title}}" />
-              <div class="cart-item-info">
-                <p class="cart-item-title">{{ product.name }}</p>
-                <p class="cart-item-author">{{ product.specifications }}</p>
-                <p class="cart-item-price">R$ {{ product.price.toFixed(2) }}</p>
-              </div>
+              <RouterLink :to="`/product/${product.id}`">
+                <img :src="product.image[0]" alt="{{product.title}}" />
+                <div class="cart-item-info">
+                  <p class="cart-item-title">{{ product.name }}</p>
+                  <p class="cart-item-author">{{ product.specifications }}</p>
+                  <p class="cart-item-price">R$ {{ product.price.toFixed(2) }}</p>
+                </div>                
+              </RouterLink>
             </td>
             <td>
               <div class="cart-item-quantity">
