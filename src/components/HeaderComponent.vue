@@ -41,11 +41,11 @@ function toggleMenu() {
             <i :class="isDarkMode ? 'fa-solid fa-moon' : 'fa-solid fa-sun'"></i>
             </button>
         </li>
-        <li>
+
             <button class="hamburger" @click="toggleMenu">
               <span class="mdi mdi-menu"></span>
             </button>
-        </li>
+
       </ul>
       
     </nav>
