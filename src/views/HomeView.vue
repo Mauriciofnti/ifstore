@@ -290,13 +290,13 @@ const { currentIndex: promoIndex, track: promoTrack, prevBtn: promoPrevBtn, next
 
 #home-page-produtos div:hover, #center-produtos div:hover {
   background-color: var(--page2-hover);
-
+  & p {
+    color: #fff;
+  }
 }
 
 #home-page-produtos div a img:hover, #center-produtos div a img:hover {
-  transform: scale(105%);
-  color: #fff;
-  
+  transform: scale(105%);  
 }
 
 @media (max-width: 768px) {

@@ -34,9 +34,9 @@
 </template>
 <style>
 footer {
-  background-color: #27ae60;
+  background-color: var(--page1);
   padding: 2vh 8vw;
-  color: #fff;
+  color: var(--text);
 
   .upper-footer {
     display: flex;
@@ -56,7 +56,6 @@ footer {
 
         & a {
           text-decoration: none;
-          color: #fff;
         }
       }
 
@@ -82,7 +81,6 @@ footer {
     li {
       list-style: none;
       font-size: 1.2rem;
-      color: #fff;
     }
   }
 }

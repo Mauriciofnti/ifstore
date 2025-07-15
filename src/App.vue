@@ -1,17 +1,22 @@
 <script setup>
 import { RouterView } from 'vue-router'
+import { useDarkMode } from './stores/useDarkMode.js'
 import HeaderComponent from './components/HeaderComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
+
+const { isDarkMode } = useDarkMode()
 </script>
 
 <template>
-  <header-component></header-component>        
-    <router-view v-slot="{ Component }">
-        <transition name="fade" mode="out-in">
-        <component :is="Component" />
-      </transition>
-    </router-view>
-  <footer-component></footer-component>
+  <div :class="{ dark: isDarkMode }">
+    <header-component></header-component>        
+      <router-view v-slot="{ Component }">
+          <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+    <footer-component></footer-component>
+  </div>  
 </template>
 
 <style scoped>

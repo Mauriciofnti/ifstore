@@ -1,7 +1,9 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
+import { useDarkMode } from '../stores/useDarkMode.js'
 
+const { isDarkMode, toggleDarkMode } = useDarkMode()
 const isMenuOpen = ref(false)
 
 function toggleMenu() {
@@ -20,9 +22,6 @@ function toggleMenu() {
       <!-- <div class="search-wrapper">
         <input type="text" class="search" placeholder="Buscar..." />
       </div> -->
-      <button class="hamburger" @click="toggleMenu">
-        <span class="mdi mdi-menu"></span>
-      </button>
       <ul :class="{ 'nav-links': true, 'active': isMenuOpen }">
         <li><RouterLink to="/pcbuild" @click="toggleMenu">Monte seu PC</RouterLink></li>
         <li><RouterLink to="/products/processadores" @click="toggleMenu">Processadores</RouterLink></li>
@@ -33,14 +32,36 @@ function toggleMenu() {
         <li>
           <RouterLink to="/cart"><span class="mdi mdi-cart"></span></RouterLink>
         </li>
-        <li><span class="mdi mdi-heart"></span></li>
-        <li><span class="mdi mdi-account"></span></li>
+        <li>
+            <button
+              id="darkModeButton"
+              @click="toggleDarkMode"
+              aria-label="Alternar modo escuro"
+            >
+            <i :class="isDarkMode ? 'fa-solid fa-moon' : 'fa-solid fa-sun'"></i>
+            </button>
+        </li>
+        <li>
+            <button class="hamburger" @click="toggleMenu">
+              <span class="mdi mdi-menu"></span>
+            </button>
+        </li>
       </ul>
+      
     </nav>
   </header>
 </template>
 
 <style scoped>
+#darkModeButton {
+  border: none;
+  background-color: var(--page2);
+  color: var(--text);
+
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, background-color 0.3s, color 0.3s;
+}
 header nav {
   display: flex;
   justify-content: space-between;
@@ -57,7 +78,6 @@ header nav h1 {
 
 header nav h1 a {
   text-decoration: none;
-  color: #000;
   display: flex;
   align-items: center;
 }
@@ -93,11 +113,6 @@ header nav ul li {
   font-size: clamp(0.9rem, 2.5vw, 1rem);
 }
 
-header nav ul li a {
-  text-decoration: none;
-  color: #000;
-}
-
 header nav .icons {
   display: flex;
   gap: 10px;
@@ -106,6 +121,9 @@ header nav .icons {
 header nav .icons li {
   color: #27ae60;
   font-size: clamp(1.1rem, 3vw, 1.3rem); 
+  background-color: var(--page2);
+  border-radius: 5px;
+  padding: 6px;
 }
 
 header nav .search-wrapper {
